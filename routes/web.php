@@ -34,6 +34,13 @@ Route::post('/suratmasuk/{id}/disposisi','App\Http\Controllers\SuratMasukControl
 Route::post('/suratmasuk/{id}/tindaklanjut','App\Http\Controllers\SuratMasukController@tindaklanjut')->middleware('auth');
 Route::get('/suratmasuk/{id}/delete','App\Http\Controllers\SuratMasukController@delete')->middleware('auth');
 
+Route::get('/suratkeluar', 'App\Http\Controllers\SuratKeluarController@index')->middleware('auth');
+Route::post('/suratkeluar/create','App\Http\Controllers\SuratKeluarController@create')->middleware('auth');
+Route::post('/suratkeluar/{id}/update','App\Http\Controllers\SuratKeluarController@update')->middleware('auth');
+Route::post('/suratkeluar/{id}/disposisi','App\Http\Controllers\SuratKeluarController@disposisi')->middleware('auth');
+Route::post('/suratkeluar/{id}/tindaklanjut','App\Http\Controllers\SuratKeluarController@tindaklanjut')->middleware('auth');
+Route::get('/suratkeluar/{id}/delete','App\Http\Controllers\SuratKeluarController@delete')->middleware('auth');
+
 Route::get('/galeri', 'App\Http\Controllers\GaleriController@index')->middleware('auth');
 
 

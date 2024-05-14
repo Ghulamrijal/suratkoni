@@ -51,6 +51,12 @@
                           @if($loggedIn->role_id == 1 )
                           <a href="" class="btn btn-info"  data-toggle="modal" data-target="#practice_modal-{{ $surat_masuk->id}}">Lihat</a>
                           @endif  
+                          @if($loggedIn->role_id == 2 )
+                          <a href="" class="btn btn-info"  data-toggle="modal" data-target="#practice_modal-{{ $surat_masuk->id}}">Lihat</a>
+                          @endif
+                          @if($loggedIn->role_id == 3 )
+                          <a href="" class="btn btn-info"  data-toggle="modal" data-target="#practice_modal-{{ $surat_masuk->id}}">Lihat</a>
+                          @endif    
                         </td>
                       </tr>
                     @endforeach

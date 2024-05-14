@@ -39,7 +39,7 @@
 				<div id="navbar-menu">
 					 <ul class="nav navbar-nav narbar-center">
 						<!-- <li> -->
-							<h2 style="margin:25px;"> Sistem Pengelolaan Surat Masuk </h2>
+							<h2 style="margin:25px;"> Sistem Pengelolaan Surat </h2>
 						<!-- </li> -->
 					 </ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -71,6 +71,9 @@
 						<li >
 							<a href="/suratmasuk" class="{{ request()->is('suratmasuk') ? 'active' : '' }}"><i class="lnr lnr-envelope"></i> <span>Surat Masuk</span></a>
 						</li>
+						<li >
+							<a href="/suratkeluar" class="{{ request()->is('suratmasuk') ? 'active' : '' }}"><i class="lnr lnr-envelope"></i> <span>Surat Keluar</span></a>
+						</li>
 						<li>
 							<a href="/galeri" class="{{ request()->is('galeri') ? 'active' : '' }}"><i class="lnr lnr-file-empty"></i> <span>Galeri Surat Masuk</span></a>
 						</li>
@@ -89,7 +92,7 @@
 		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
-				<p class="copyright">by <i class="fa fa-love"></i>Shafa dan Yurischa</a>
+				<p class="copyright">by <i class="fa fa-love"></i>Ghulam Okky dan Eka</a>
 </p>
 			</div>
 		</footer>

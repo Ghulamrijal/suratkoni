@@ -204,21 +204,57 @@
               {{csrf_field()}}
               <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios1" value="test" checked>
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios1" value="Bidang Pembinaan Prestasi" checked>
                     <label class="form-check-label" for="exampleRadios1">
-                      test
+                      Bidang Pembinaan Prestasi
                     </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios2" value="Kepala Seksi Pengembangan Aplikasi dan Sumber Daya Manusia" checked>
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios2" value="Bidang Organisasi dan Hukum Olahraga" checked>
                     <label class="form-check-label" for="exampleRadios2">
-                      Kepala Seksi Pengembangan Aplikasi dan Sumber Daya Manusia
+                      Bidang Organisasi dan Hukum Olahraga
                     </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Kepala Seksi Jaringan Infrastruktur Teknologi Informasi, Persandian dan Keamanan Informasi" checked>
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Pendidikan dan Penataran" checked>
                     <label class="form-check-label" for="exampleRadios2">
-                      Kepala Seksi Jaringan Infrastruktur Teknologi Informasi, Persandian dan Keamanan Informasi
+                      Bidang Pendidikan dan Penataran
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Sport Science dan Iptek" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Sport Science dan Iptek
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Pengumpulan dan Pengelolaan Data Dan Penelitian dan Pengembangan" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Pengumpulan dan Pengelolaan Data Dan Penelitian dan Pengembangan
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Mobilisasi Sumber Daya & Kerjasama Antar Lembaga" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Mobilisasi Sumber Daya & Kerjasama Antar Lembaga
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Perencanaan Program dan Anggaran" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Perencanaan Program dan Anggaran
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Media dan Humas" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Media dan Humas
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="disposisi" id="exampleRadios3" value="Bidang Kesejahteraan Pelaku Olahraga" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Bidang Kesejahteraan Pelaku Olahraga
                     </label>
                 </div>
               </div>
