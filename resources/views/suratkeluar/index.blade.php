@@ -42,10 +42,8 @@
                         <th scope>No</th>
                         <th scope>Pengirim</th>
                         <th scope>Nomor Surat</th>
-                        <th scope>Klasifikasi</th>
-                        <th scope> Status </th>
-                        <th scope>Tujuan Disposisi</th>
-                        <th scope>Action</th>
+                        <th scope>Tujuan</th>
+                        <th scope>File surat</th>
                       </tr>
 										</thead>
                     <tbody>
@@ -57,12 +55,6 @@
                           <td>{{$surat_keluar->nama_pengirim}} </td>
                           <td>{{$surat_keluar->nomor_surat}} </td>
                           <td>{{$surat_keluar->klasifikasi}} </td>
-                          <td> @if($surat_keluar->disposisi != NULL)
-                          <a class="btn btn-success"> Disposisi </a>
-                          @else
-                          <a class="btn btn-danger"> Disposisi </a>
-                                @endif
-                          </td>
                           <td>{{$surat_keluar->disposisi}} </td>
                           <td>
                           

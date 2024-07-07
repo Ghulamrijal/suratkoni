@@ -77,9 +77,9 @@
 						<li>
 							<a href="/galeri" class="{{ request()->is('galeri') ? 'active' : '' }}"><i class="lnr lnr-file-empty"></i> <span>Galeri Surat Masuk</span></a>
 						</li>
-                        <li>
+                        <!-- <li>
 							<a href="/klasifikasi" class="{{ request()->is('klasifikasi') ? 'active' : '' }}"><i class="lnr lnr-layers"></i> <span>Klasifikasi Surat</span></a>
-						</li>
+						</li> -->
 					
 					</ul>
 				</nav>
