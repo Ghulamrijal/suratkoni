@@ -44,6 +44,7 @@
                         <th scope>Nomor Surat</th>
                         <th scope>Tujuan</th>
                         <th scope>File surat</th>
+                        <th scope>Action</th>
                       </tr>
 										</thead>
                     <tbody>
@@ -55,7 +56,7 @@
                           <td>{{$surat_keluar->nama_pengirim}} </td>
                           <td>{{$surat_keluar->nomor_surat}} </td>
                           <td>{{$surat_keluar->klasifikasi}} </td>
-                          <td>{{$surat_keluar->disposisi}} </td>
+                          <td><a href="/admin/assets/filekeluar/{{$surat_keluar->file}}" class="btn btn-primary btn-sm" >{{$surat_keluar->file}}</a></td>
                           <td>
                           
                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Disposisi</button> -->
@@ -167,7 +168,7 @@
               <div class="form-group">
                 <label for="" id="lbleditfile">Unggah File Surat(pdf)</label>
                   <input type="file" class="form-control-file" id="editfile" name="editfile">
-                    <file src="{{ asset('admin/assets/file/' . $surat_keluar->file) }}" alt="file" >
+                    <file src="{{ asset('admin/assets/filekeluar/' . $surat_keluar->file) }}" alt="file" >
               </div>
           </div>
           <div class="modal-footer" id="footeredit">

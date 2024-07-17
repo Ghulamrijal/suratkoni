@@ -32,7 +32,6 @@ class SuratKeluarController extends Controller
         $suratkeluar->nomor_surat = $request->nomor_surat;
         $suratkeluar->perihal = $request->perihal;
         $suratkeluar->klasifikasi = $request->klasifikasi;
-        $suratkeluar->disposisi = $request->disposisi;
         $suratkeluar->file = $suratkeluar->setFile($request->file);
         $suratkeluar->save();
         return redirect('/suratkeluar')->with('sukses','Data berhasil di input');

@@ -42,7 +42,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputNama">Unggah File Surat (pdf)</label>
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file">
-                                    <file src="{{ asset('admin/assets/file/' . $suratmasuk->file) }}" alt="file" >
+                                    <file src="{{ asset('admin/assets/filekeluar/' . $suratmasuk->file) }}" alt="file" >
                                 </div>
                                 <!-- <div class="form-group">
                                   <label for="exampleInputNama">Unggah File Surat(pdf)</label>
