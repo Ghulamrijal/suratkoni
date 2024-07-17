@@ -44,7 +44,7 @@
                         <th scope>Nomor Surat</th>
                         <th scope>Tujuan</th>
                         <th scope>File surat</th>
-                        <th scope>Action</th>
+                        <!-- <th scope>Action</th> -->
                       </tr>
 										</thead>
                     <tbody>
@@ -61,10 +61,10 @@
                           
                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Disposisi</button> -->
                           @if($loggedIn->role_id == 2 )
-                          <a href="" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalsDisposisi-{{ $surat_keluar->id}}">Disposisi</a>
+                          <!-- <a href="" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalsDisposisi-{{ $surat_keluar->id}}">Disposisi</a> -->
                           @endif
                           @if($loggedIn->role_id == 3 )
-                          <a href="" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalsTL-{{ $surat_keluar->id}}">Tindak lanjut</a>
+                          <!-- <a href="" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalsTL-{{ $surat_keluar->id}}">Tindak lanjut</a> -->
                           @endif
                           @if($loggedIn->role_id == 1 ) 
                           <a href="" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#ModalsEdit-{{ $surat_keluar->id}}">Edit</a>
