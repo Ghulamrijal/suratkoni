@@ -101,7 +101,7 @@
                                 <div class="form-group">
                                   <label for="exampleInputNama">Download File Surat(pdf)</label><br>
                                   <input name="file"  type="text" class="form-control" id="file"  value="<?php echo "{$surat_masuk->file}";?>" readonly><br>
-                                  <a href="{{asset($surat_masuk->file)}}" class="btn btn-success btn-sm" download="" id="file">Download</a> 
+                                  <a href="admin/assets/file/{{($surat_masuk->file)}}" class="btn btn-success btn-sm" download="" id="file">Download</a> 
                                   <!-- {{-- <img src="{{ assets('admin/assets/img/pdf.jpg') }}"> --}} -->
                                 </div>
                                 </form>
