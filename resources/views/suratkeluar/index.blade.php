@@ -11,7 +11,7 @@
 							<!-- TABLE HOVER -->
 							<div class="panel">     
 								<div class="panel-heading">
-									<h1 class="panel-title"><i class="lnr lnr-layers"></i> Kelola Surat keluar </h1>
+									<h1 class="panel-title"><i class="lnr lnr-layers"></i> Kelola Surat Keluar </h1>
 								</div>
                 <!-- message error validation -->
                 @if ($errors->any())
