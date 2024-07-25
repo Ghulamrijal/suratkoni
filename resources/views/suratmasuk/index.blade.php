@@ -32,7 +32,7 @@
                     </div>
                     <div class="form-group input-group col-md-6">
                       <form action="/suratmasuk" method="GET">
-                      <input type="search" class="form-control" id="inputPassword2" placeholder="Search..." name="search">
+                      <br><input type="search" class="form-control" id="inputPassword2" placeholder="Search..." name="search">
                       </form> 
                     </div>
                   </div>
@@ -42,7 +42,7 @@
                         <th scope>No</th>
                         <th scope>Pengirim</th>
                         <th scope>Nomor Surat</th>
-                        <th scope>Klasifikasi</th>
+                        <th scope>Perihal</th>
                         <th scope> Status </th>
                         <th scope>Tujuan Disposisi</th>
                         <th scope>Action</th>
@@ -56,7 +56,7 @@
                           <th scope="row">{{ $loop->iteration }} </th>
                           <td>{{$surat_masuk->nama_pengirim}} </td>
                           <td>{{$surat_masuk->nomor_surat}} </td>
-                          <td>{{$surat_masuk->klasifikasi}} </td>
+                          <td>{{$surat_masuk->perihal}} </td>
                           <td> @if($surat_masuk->disposisi != NULL)
                           <a class="btn btn-success"> Disposisi </a>
                           @else
