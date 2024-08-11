@@ -42,9 +42,9 @@
                           <td>{{$surat_masuk->perihal}} </td>
                           <td>{{$surat_masuk->file}} </td>
                           <td> @if($surat_masuk->disposisi != NULL)
-                          <a class="btn btn-success"> Disposisi </a>
+                          <a class="btn btn-success"> Sudah Disposisi </a>
                           @else
-                          <a class="btn btn-danger"> Disposisi </a>
+                          <a class="btn btn-danger"> Belum Disposisi </a>
                                 @endif
                           </td>
                           <td>

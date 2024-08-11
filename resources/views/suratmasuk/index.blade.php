@@ -45,6 +45,7 @@
                         <th scope>Perihal</th>
                         <th scope> Status </th>
                         <th scope>Tujuan Disposisi</th>
+                        <th scope>Tanggal Diterima</th>
                         <th scope>Action</th>
                       </tr>
 										</thead>
@@ -58,17 +59,18 @@
                           <td>{{$surat_masuk->nomor_surat}} </td>
                           <td>{{$surat_masuk->perihal}} </td>
                           <td> @if($surat_masuk->disposisi != NULL)
-                          <a class="btn btn-success"> Disposisi </a>
+                          <a class="btn btn-success"> Sudah Disposisi </a>
                           @else
-                          <a class="btn btn-danger"> Disposisi </a>
+                          <a class="btn btn-danger"> Belum Disposisi </a>
                                 @endif
                           </td>
                           <td>{{$surat_masuk->disposisi}} </td>
+                          <td>{{ Carbon\Carbon::createFromTimeString($surat_masuk->created_at)->format('d F Y') }}</td>
                           <td>
                           
                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Disposisi</button> -->
                           @if($loggedIn->role_id == 2 )
-                          <a href="" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalsDisposisi-{{ $surat_masuk->id}}">Disposisi</a>
+                          <a href="" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalsDisposisi-{{ $surat_masuk->id}}">Disposisikan</a>
                           @endif
                           @if($loggedIn->role_id == 3 )
                           <a href="" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalsTL-{{ $surat_masuk->id}}">Tindak lanjut</a>
@@ -78,6 +80,7 @@
                           <a href="/suratmasuk/{{$surat_masuk->id}}/delete" class="btn btn-danger btn-sm" onclick="return confirm('Anda yakin ingin menghapus data?')">Delete</a>
                           @endif
                           </td>
+
                       </tr>
                     @endforeach
 										</tbody>

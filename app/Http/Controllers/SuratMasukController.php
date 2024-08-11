@@ -18,9 +18,10 @@ class SuratMasukController extends Controller
                             ->orWhere('nomor_surat', 'LIKE' , '%' .$request->search. '%')
                             ->orWhere('klasifikasi', 'LIKE' , '%' .$request->search. '%')
                             ->orWhere('disposisi', 'LIKE' , '%' .$request->search. '%')
+                            ->orderBy('id','desc')
                             ->cursorPaginate(10);
         }else{
-            $suratmasuk = SuratMasuk::cursorPaginate(10);
+            $suratmasuk = SuratMasuk::orderBy('id','desc')->cursorPaginate(10);
         }
         
         return view('suratmasuk.index', compact('loggedIn','suratmasuk'));

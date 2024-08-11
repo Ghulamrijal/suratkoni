@@ -44,6 +44,7 @@
                         <th scope>Nomor Surat</th>
                         <th scope>Tujuan</th>
                         <th scope>File surat</th>
+                        <th scope>Tanggal Keluar Surat</th>
                         <!-- <th scope>Action</th> -->
                       </tr>
 										</thead>
@@ -57,6 +58,7 @@
                           <td>{{$surat_keluar->nomor_surat}} </td>
                           <td>{{$surat_keluar->klasifikasi}} </td>
                           <td><a href="/admin/assets/filekeluar/{{$surat_keluar->file}}" class="btn btn-primary btn-sm" >{{$surat_keluar->file}}</a></td>
+                          <td>{{ Carbon\Carbon::createFromTimeString($surat_keluar->created_at)->format('d F Y') }} </td>
                           <td>
                           
                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Disposisi</button> -->

@@ -9,7 +9,7 @@ class SuratMasuk extends Model
 {
     protected $table = 'suratmasuk';
     protected $fillable = ['id','nama_pengirim','nomor_surat','perihal','klasifikasi','disposisi','file','ket_disposisi','tindak_lanjut'];
-
+    protected $dates = ['created_at'];
     public function setFile($file)
     {
         $img_temp = $file;
