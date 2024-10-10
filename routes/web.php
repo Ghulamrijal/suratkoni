@@ -48,4 +48,5 @@ Route::get('/klasifikasi', 'App\Http\Controllers\KlasifikasiController@index')->
 Route::post('/klasifikasi/create','App\Http\Controllers\KlasifikasiController@create')->middleware('auth');
 Route::post('/klasifikasi/{id}/update','App\Http\Controllers\KlasifikasiController@update')->middleware('auth');
 Route::get('/klasifikasi/{id}/delete','App\Http\Controllers\KlasifikasiController@delete')->middleware('auth');
-
+Route::get('/suratmasuk/periode/','App\Http\Controllers\SuratMasukController@periode')->middleware('auth');
+// Route::get('suratmasuk/periode/{tgl_awal}/{tgl_akhir}','SuratMasukController@periode');

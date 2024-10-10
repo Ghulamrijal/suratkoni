@@ -64,7 +64,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- END WRAPPER -->
 </body>
 
 </html>

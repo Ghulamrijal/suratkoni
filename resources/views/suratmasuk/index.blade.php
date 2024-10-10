@@ -29,7 +29,18 @@
                     @if($loggedIn->role_id == 1 )
                       <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-square" ></i> Tambah data</button>
                       @endif
+                      <br><br>
                     </div>
+                      <form class="form-inline"  method="get" action="{{url('suratmasuk/periode') }}">
+                        <div class="form-group">
+                          <label for="email">Tanggal awal:</label>
+                          <input type="text" name="tanggal_awal" class="form-control datepicker" id="email" autocomplete="off" value="{{ date('y-m-d') }}">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Tanggal akhir:</label>
+                          <input type="text" name="tanggal_akhir" class="form-control datepicker" id="pwd" autocomplete="off" value="{{ date('y-m-d') }}">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
                     <div class="form-group input-group col-md-6">
                       <form action="/suratmasuk" method="GET">
                       <br><input type="search" class="form-control" id="inputPassword2" placeholder="Search..." name="search">
@@ -87,9 +98,7 @@
                   </table>
                 </div>
                 <div class="position-absolute bottom-0 end-0">
-                    <!-- <ul > -->
-                        {{ $suratmasuk->links() }}
-                    <!-- </ul> -->
+
                 </div>
               </div>
              

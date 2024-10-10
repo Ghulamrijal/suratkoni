@@ -26,6 +26,21 @@ class SuratMasukController extends Controller
         
         return view('suratmasuk.index', compact('loggedIn','suratmasuk'));
     }
+    public function periode(Request $request)
+    {
+        // dd($request->tanggal_awal);
+        $tanggal_awal = date('y-m-d',strtotime($request->tanggal_awal));
+        $tanggal_akhir = date('y-m-d',strtotime($request->tanggal_akhir));
+        $title = "list data dari tanggal $tanggal_awal sampai tanggal $tanggal_akhir";
+        $loggedIn = Auth::user();
+        $suratmasuk = DB::table('suratmasuk')
+                        ->where('created_at','>=',$tanggal_awal.' 00:00:00')
+                        ->where('created_at','<=',$tanggal_akhir.' 23:59:59')
+                        ->get();
+        // dd($tanggal_awal.'00:00:00');
+        
+        return view('suratmasuk.index', compact('loggedIn','suratmasuk'));
+    }
     public function create(Request $request)
     {
         $suratmasuk = new \App\Models\SuratMasuk;
